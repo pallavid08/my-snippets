@@ -27,6 +27,7 @@ class Ogre extends Character {
 }
 
 const dolby = new Elf('Dolby', 'cloth', 'house');
+dolby.attack();
 console.log(dolby.attack());
 console.log(dolby);
 
@@ -42,3 +43,4 @@ console.log(Character.prototype.isPrototypeOf(Ogre.prototype)); //true
 //Better way to check is using instanceof
 console.log(dolby instanceof Elf); //true
 console.log(dolby instanceof Ogre); //false
+console.log(dolby instanceof Character); //true
